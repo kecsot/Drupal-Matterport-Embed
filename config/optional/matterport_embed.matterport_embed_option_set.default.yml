@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: Default
+settings:
+  url_parameters:
+    -
+      key: help
+      value: '1'
+  iframe_allows:
+    - fullscreen

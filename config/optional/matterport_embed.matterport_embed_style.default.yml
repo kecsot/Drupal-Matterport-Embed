@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: 'Default (16/9 responsive)'
+plugin: responsive_style
+configuration:
+  x_ratio: '16'
+  y_ratio: '9'

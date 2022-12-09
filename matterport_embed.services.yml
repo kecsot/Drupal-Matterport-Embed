@@ -1,0 +1,7 @@
+services:
+  plugin.manager.matterport_embed_style:
+    class: Drupal\matterport_embed\MatterportEmbedStylePluginManager
+    parent: default_plugin_manager
+
+  matterport_embed.renderer:
+    class: Drupal\matterport_embed\MatterportEmbedRenderer\MatterportEmbedRenderer

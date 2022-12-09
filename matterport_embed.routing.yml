@@ -1,0 +1,71 @@
+matterport_embed.settings_form:
+  path: '/admin/config/system/matterport-embed'
+  defaults:
+    _title: 'Matterport Embed settings'
+    _form: 'Drupal\matterport_embed\Form\SettingsForm'
+  requirements:
+    _permission: 'administer matterport_embed'
+
+entity.matterport_embed_style.collection:
+  path: '/admin/structure/matterport-embed-style'
+  defaults:
+    _entity_list: 'matterport_embed_style'
+    _title: 'Matterport Embed Style configuration'
+  requirements:
+    _permission: 'administer matterport_embed'
+
+entity.matterport_embed_style.add_form:
+  path: '/admin/structure/matterport_embed_style/add/{matterport_embed_style_plugin}'
+  defaults:
+    _entity_form: 'matterport_embed_style.add'
+    _title: 'Add a matterport embed style'
+  requirements:
+    _permission: 'administer matterport_embed'
+
+entity.matterport_embed_style.edit_form:
+  path: '/admin/structure/matterport-embed-style/{matterport_embed_style}'
+  defaults:
+    _entity_form: 'matterport_embed_style.edit'
+    _title: 'Edit a matterport embed style'
+  requirements:
+    _permission: 'administer matterport_embed'
+
+entity.matterport_embed_style.delete_form:
+  path: '/admin/structure/matterport-embed-style/{matterport_embed_style}/delete'
+  defaults:
+    _entity_form: 'matterport_embed_style.delete'
+    _title: 'Delete a matterport embed style'
+  requirements:
+    _permission: 'administer matterport_embed'
+
+entity.matterport_embed_option_set.collection:
+  path: '/admin/structure/matterport-embed-option-set'
+  defaults:
+    _entity_list: 'matterport_embed_option_set'
+    _title: 'Matterport Embed Option Set configuration'
+  requirements:
+    _permission: 'administer matterport_embed'
+
+entity.matterport_embed_option_set.add_form:
+  path: '/admin/structure/matterport_embed_option_set/add'
+  defaults:
+    _entity_form: 'matterport_embed_option_set.add'
+    _title: 'Add a matterport embed option set'
+  requirements:
+    _permission: 'administer matterport_embed'
+
+entity.matterport_embed_option_set.edit_form:
+  path: '/admin/structure/matterport-embed-option-set/{matterport_embed_option_set}'
+  defaults:
+    _entity_form: 'matterport_embed_option_set.edit'
+    _title: 'Edit a matterport embed option set'
+  requirements:
+    _permission: 'administer matterport_embed'
+
+entity.matterport_embed_option_set.delete_form:
+  path: '/admin/structure/matterport-embed-option-set/{matterport_embed_option_set}/delete'
+  defaults:
+    _entity_form: 'matterport_embed_option_set.delete'
+    _title: 'Delete a matterport embed option set'
+  requirements:
+    _permission: 'administer matterport_embed'

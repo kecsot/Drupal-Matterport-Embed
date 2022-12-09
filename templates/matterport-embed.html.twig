@@ -1,0 +1,12 @@
+{% set wrapper_classes = wrapper_classes|merge(['matterport-embed-wrapper']) %}
+
+<div
+  class="{{ wrapper_classes|join(' ') }}"
+  {% if wrapper_inline_styles %} style="{{ wrapper_inline_styles|join(';') }}" {% endif %}>
+  <iframe
+    {% if classes %} class="{{ classes|join(' ') }}" {% endif %}
+    {% if width %} width="{{ width }}" {% endif %}
+    {% if height %} height="{{ height }}" {% endif %}
+    src="{{ url }}"
+    {% if iframe_allows %} allow="{{ iframe_allows }}" {% endif %}></iframe>
+</div>

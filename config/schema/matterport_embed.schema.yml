@@ -1,0 +1,93 @@
+field.value.matterport_embed:
+  type: mapping
+  label: Default value
+  mapping:
+    value:
+      type: label
+      label: Value
+
+field.formatter.settings.matterport_embed:
+  type: mapping
+  label: Matterport Formatter settings
+  mapping:
+    style:
+      type: string
+      label: Style
+    parameter_option_set:
+      type: string
+      label: Style
+
+matterport_embed.configuration.*:
+  type: mapping
+
+matterport_embed.configuration.responsive_style:
+  type: mapping
+  mapping:
+    x_ratio:
+      type: string
+      label: 'X Ratio'
+    y_ratio:
+      type: string
+      label: 'Y Ratio'
+
+matterport_embed.configuration.square_style:
+  type: mapping
+  mapping:
+    size:
+      type: string
+      label: 'Size'
+
+matterport_embed.configuration.rectangle_style:
+  type: mapping
+  mapping:
+    x:
+      type: string
+      label: 'X'
+    y:
+      type: string
+      label: 'Y'
+
+matterport_embed.matterport_embed_style.*:
+  type: config_entity
+  label: Matterport Embed Style
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: label
+      label: Label
+    plugin:
+      type: string
+      label: 'Plugin'
+    configuration:
+      type: matterport_embed.configuration.[%parent.plugin]
+
+matterport_embed.matterport_embed_option_set.*:
+  type: config_entity
+  label: Matterport Embed Option Set
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: label
+      label: Label
+    settings:
+      type: mapping
+      mapping:
+        url_parameters:
+          type: sequence
+          label: 'Url Parameters'
+          sequence:
+            type: mapping
+            mapping:
+              key:
+                type: string
+              value:
+                type: string
+        iframe_allows:
+          type: sequence
+          label: 'iframe allows'
+          sequence:
+            type: string

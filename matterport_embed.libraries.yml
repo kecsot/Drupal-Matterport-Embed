@@ -1,0 +1,5 @@
+responsive-style:
+  version: VERSION
+  css:
+    theme:
+      css/responsive-style.css: { }

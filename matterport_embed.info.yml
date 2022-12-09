@@ -1,0 +1,11 @@
+name: Matterport Embed
+type: module
+description: Provides additional functionality for the site.
+package: Custom
+core_version_requirement: ^9 || ^10
+configure: entity.matterport_embed_style.collection
+
+# Information added by Drupal.org packaging script on 2022-12-03
+version: '1.0.0-alpha1'
+project: 'matterport_embed'
+datestamp: 1670091339
